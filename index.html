@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaf3">
+  <meta name="description" content="Discover famous dishes from around the world with Flavor Atlas.">
+  <title>Flavor Atlas | Explore World Cuisine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#top" aria-label="Flavor Atlas home"><span class="logo-icon">🍽</span><span>Flavor <span class="logo-accent">Atlas</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="#top">Home</a><a href="#explorer">Explore foods</a><a href="#about">About</a></nav>
+    <a class="header-button" href="#explorer"><span>✦</span> Start exploring</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-line"></span> A WORLD OF FLAVOR</div>
+        <h1>Every dish tells<br>a <span class="highlight">story.</span></h1>
+        <p class="hero-description">Travel the world one bite at a time. Discover beloved dishes, local traditions, and the flavors that make every culture unique.</p>
+        <a class="primary-button" href="#explorer">Explore the atlas <span>↘</span></a>
+        <div class="hero-meta"><div class="avatar-stack"><span>🍜</span><span>🍕</span><span>🍛</span><span>🌮</span></div><div><strong>8 cuisines to discover</strong><small>12 signature dishes from each country</small></div></div>
+      </div>
+      <div class="hero-visual" aria-label="Food photography">
+        <div class="hero-glow"></div>
+        <div class="hero-image-frame"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85" alt="Colorful meal with fresh ingredients" onerror="this.style.display='none'"></div>
+        <div class="floating-note note-top"><span class="note-emoji">🌍</span><div><strong>Explore cultures</strong><small>One plate at a time</small></div></div>
+        <div class="floating-note note-bottom"><span class="note-emoji">❤️</span><div><strong>Made with flavor</strong><small>Traditions worth sharing</small></div></div>
+        <span class="decor decor-one">✳</span><span class="decor decor-two">✦</span>
+      </div>
+    </section>
+
+    <section class="explorer" id="explorer">
+      <div class="section-top"><div><span class="section-label">THE FLAVOR ATLAS</span><h2>Find your next favorite</h2><p class="section-description">Choose a country and discover its signature dishes.</p></div><div class="step-pill"><span></span> YOUR FOOD JOURNEY</div></div>
+      <div class="selector-panel"><div class="selector-label"><span class="selector-icon">🌎</span><div><label for="countrySelect">Choose a country</label><small>Pick a destination to explore its cuisine</small></div></div><div class="select-container"><select id="countrySelect" aria-label="Choose a country"><option value="">Select a country...</option><option value="iran">🇮🇷 Iran</option><option value="italy">🇮🇹 Italy</option><option value="japan">🇯🇵 Japan</option><option value="mexico">🇲🇽 Mexico</option><option value="india">🇮🇳 India</option><option value="france">🇫🇷 France</option><option value="turkey">🇹🇷 Turkey</option><option value="korea">🇰🇷 South Korea</option></select><span class="select-arrow">⌄</span></div></div>
+      <div class="empty-state" id="emptyState"><div class="empty-illustration"><span>🍜</span><i class="empty-spark spark-a">✦</i><i class="empty-spark spark-b">✳</i></div><h3>Your table is waiting</h3><p>Choose a country above to discover its most-loved dishes.</p><div class="suggestions"><button type="button" data-country="italy">🇮🇹 Italian classics</button><button type="button" data-country="japan">🇯🇵 Japanese favorites</button><button type="button" data-country="iran">🇮🇷 Persian flavors</button><button type="button" data-country="mexico">🇲🇽 Mexican bites</button></div></div>
+      <div class="results" id="results" hidden></div>
+    </section>
+
+    <section class="bottom-banner" id="about"><span class="banner-emoji">🥄</span><div><h3>Good food brings us together.</h3><p>Keep exploring, stay curious, and let every meal tell you something new.</p></div><a href="#explorer" aria-label="Back to explorer">↑</a></section>
+  </main>
+  <footer class="footer"><a class="logo" href="#top"><span class="logo-icon">🍽</span><span>Flavor <span class="logo-accent">Atlas</span></span></a><p>Made for curious eaters everywhere.</p><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
